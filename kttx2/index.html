@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <title>kiem tra thuong xuyen</title>
+        <link rel="stylesheet" href="css/Untitled-2.css">    
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="image/tải xuống.png">
+            </div>
+            <div id="title">
+                <p id="title-1">Web for kids</p>
+                <p id="title-2">Free and fun digital educationfor children</p>
+            </div>
+            <div id="contact">
+                <span>ABOUT CONTACT<span id="donate">DONATE</span></span>
+            </div>
+        </header>
+        <div id="container">
+            <div id="main-container">
+                <p>Math-Addition</p>
+                <input type="text" name="numA" id="numA">
+                <span class="math">+</span>
+                <input type="text" name="numB" id="numB">
+                <span class="math">=</span>
+                <button type="submit" value="Submit" id="submit" onclick="check()">Check</button>
+                <input id="kiemtra" type="text" name="kiemtra"></p>
+                <hr>
+                <div class="flex-container">
+                    <div>0</div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>  
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>  
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                  </div>
+            </div>
+            <aside id="aside-right">
+                <div>
+                    <img src="image/tải xuống.png"><br><br>
+                    <img src="image/tải xuống.png">
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <div>Copyright (c) web for kids 2019</div>
+        </footer>
+        <script>
+            function check(){
+                let a= document.getElementById("numA").value;
+                let b= document.getElementById("numB").value;
+                let x= document.getElementById("kiemtra").value;
+                if (x == '')
+                {
+                    alert("BẠN CHƯA NHẬP SỐ");
+                }
+                a=parseInt(a);
+                b=parseInt(b);
+                x=parseInt(x);
+                let c = a + b;
+                if(x == c)
+                {
+                    alert("Ket qua chinh xac");
+                }else{
+                    alert("Ket qua sai roi");
+                }
+            } 
+        </script>
+    </body>
+</html>
